@@ -8,7 +8,7 @@ from PIL import Image
 
 MODEL_PATH = '../model.tflite'
 if not os.path.exists(MODEL_PATH):
-    raise FileNotFoundError("Модель не найдена! Убедитесь, что файл model.p находится в той же директории.")
+    raise FileNotFoundError("Модель не найдена!")
 
 with open(MODEL_PATH, 'rb') as model_file:
     model = pickle.load(model_file)

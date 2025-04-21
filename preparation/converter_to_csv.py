@@ -37,4 +37,4 @@ def images_to_csv(folder_path, output_csv):
 
     print(f"Данные сохранены в {output_csv}, всего {len(data)} изображений")
 
-images_to_csv('C:/Users/Andre/Desktop/empty_capy_rgb', 'empty_capy.csv')
+images_to_csv('C:/Users/Andre/Desktop/capy_rgb_2', 'capy_2.csv')
