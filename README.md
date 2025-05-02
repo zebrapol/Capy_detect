@@ -125,3 +125,19 @@ try (Model model = new Model(context)) {
     showResult(result); 
 }
 ```
+### Установка и запуск
+#### 1. Клонировать проект
+
+```git clone https://github.com/zebrapol/Capy_detect.git
+git checkout mobile_capy```
+Открыть в Android Studio
+
+Выберите "Open an existing project" и укажите путь к проекту
+
+Убедитесь, что в build.gradle добавлены зависимости для TensorFlow Lite:
+
+```implementation 'org.tensorflow:tensorflow-lite:2.5.0'```
+Поместите файл модели model.tflite в папку assets/ (если отсутствует)
+
+Запустите приложение на устройстве или эмуляторе
+
