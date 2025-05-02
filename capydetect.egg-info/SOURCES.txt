@@ -1,0 +1,17 @@
+setup.py
+capydetect/__init__.py
+capydetect.egg-info/PKG-INFO
+capydetect.egg-info/SOURCES.txt
+capydetect.egg-info/dependency_links.txt
+capydetect.egg-info/requires.txt
+capydetect.egg-info/top_level.txt
+capydetect/model/Itog.py
+capydetect/model/__init__.py
+capydetect/model/capy_class.py
+capydetect/model/capy_class_up.py
+capydetect/preparation/OneMoreParcer.py
+capydetect/preparation/Rename.py
+capydetect/preparation/UpdateParcerCapy.py
+capydetect/preparation/__init__.py
+capydetect/preparation/converter_to_csv.py
+capydetect/preparation/convertor.py
