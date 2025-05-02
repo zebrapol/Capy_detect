@@ -129,8 +129,9 @@ try (Model model = new Model(context)) {
 ### Установка и запуск
 #### 1. Клонировать проект
 
-```git clone https://github.com/zebrapol/Capy_detect.git
-    git checkout mobile_capy
+```
+git clone https://github.com/zebrapol/Capy_detect.git
+git checkout mobile_capy
 ```
 
 - Открыть в Android Studio
