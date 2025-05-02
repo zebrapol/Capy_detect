@@ -6,7 +6,7 @@ from skimage.transform import resize
 from PIL import Image
 
 
-MODEL_PATH = '../model.tflite'
+MODEL_PATH = '../../model.tflite'
 if not os.path.exists(MODEL_PATH):
     raise FileNotFoundError("Модель не найдена!")
 

@@ -58,4 +58,4 @@ if __name__ == "__main__":
     print(f'{score * 100}% правильно отработано')
 
     # Сохранение модели
-    pickle.dump(best_estimator, open('../model.tflite', 'wb'))
+    pickle.dump(best_estimator, open('../../model.tflite', 'wb'))

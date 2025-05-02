@@ -52,4 +52,4 @@ score = accuracy_score(y_prediction, y_test)
 
 print('{}% правильно отработано'.format(str(score*100)))
 
-pickle.dump(best_estimator, open('../model.tflite', 'wb'))
+pickle.dump(best_estimator, open('../../model.tflite', 'wb'))
