@@ -24,7 +24,9 @@ templates_path = ['_templates']
 exclude_patterns = [
     'myst_parser',
     'sphinx.ext.autodoc',
-    'sphinx.ext.viewcode'
+    'sphinx.ext.viewcode',
+    'sphinx.ext.graphviz',
+
 ]
 
 language = 'ru'
