@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parcer_CAPY documentation &mdash; документация Parcer_CAPY 1.0</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=9ca2116e"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=cd1d70c9"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            Parcer_CAPY
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Parcer_CAPY documentation</a></li>
+<li><a class="reference internal" href="#id1">Проект: Обнаружение капибар на изображениях с использованием машинного обучения</a><ul>
+<li><a class="reference internal" href="#id2">Функционал</a><ul>
+<li><a class="reference internal" href="#id3">1. Сбор и обработка данных</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#images-to-csv-py"><cite>images_to_csv.py</cite></a><ul>
+<li><a class="reference internal" href="#id4">Особенности:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#web-scraping-py"><cite>web_scraping.py</cite></a><ul>
+<li><a class="reference internal" href="#id5">Источники данных:</a></li>
+<li><a class="reference internal" href="#id6">Функции:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id7">2.  Обучение модели</a></li>
+<li><a class="reference internal" href="#train-model-py"><cite>train_model.py</cite></a><ul>
+<li><a class="reference internal" href="#id8">Метрики:</a></li>
+<li><a class="reference internal" href="#id9">Особенности:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#android">3. Android-приложение</a><ul>
+<li><a class="reference internal" href="#id10">Основные компоненты:</a></li>
+<li><a class="reference internal" href="#workflow">Workflow:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id11">Подробное описание</a><ul>
+<li><a class="reference internal" href="#id12">Алгоритм работы модели</a><ul>
+<li><a class="reference internal" href="#id13">Предобработка изображения:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id14">Классификация:</a></li>
+<li><a class="reference internal" href="#id15">Android-спецификации</a><ul>
+<li><a class="reference internal" href="#id16">Минимальные требования:</a></li>
+<li><a class="reference internal" href="#id17">Особенности реализации:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id18">Установка и запуск</a><ul>
+<li><a class="reference internal" href="#id19">1. Клонировать проект</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Parcer_CAPY</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Parcer_CAPY documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="parcer-capy-documentation">
+<h1>Parcer_CAPY documentation<a class="headerlink" href="#parcer-capy-documentation" title="Ссылка на этот заголовок"></a></h1>
+</section>
+<section id="id1">
+<h1>Проект: Обнаружение капибар на изображениях с использованием машинного обучения<a class="headerlink" href="#id1" title="Ссылка на этот заголовок"></a></h1>
+<section id="id2">
+<h2>Функционал<a class="headerlink" href="#id2" title="Ссылка на этот заголовок"></a></h2>
+<section id="id3">
+<h3>1. Сбор и обработка данных<a class="headerlink" href="#id3" title="Ссылка на этот заголовок"></a></h3>
+</section>
+</section>
+</section>
+<section id="images-to-csv-py">
+<h1><cite>images_to_csv.py</cite><a class="headerlink" href="#images-to-csv-py" title="Ссылка на этот заголовок"></a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">images_to_csv</span><span class="p">(</span><span class="n">folder_path</span><span class="p">,</span> <span class="n">output_csv</span><span class="p">):</span>
+<span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd"> Конвертирует изображения в CSV-файл</span>
+<span class="sd"> Параметры:</span>
+<span class="sd">     folder_path: путь к папке с изображениями</span>
+<span class="sd">     output_csv: имя выходного файла</span>
+<span class="sd"> &quot;&quot;&quot;</span>
+ <span class="c1"># ... реализация ...</span>
+</pre></div>
+</div>
+<section id="id4">
+<h2>Особенности:<a class="headerlink" href="#id4" title="Ссылка на этот заголовок"></a></h2>
+<ul class="simple">
+<li><p>Поддержка форматов: PNG, JPG, JPEG</p></li>
+<li><p>Автоматическое ресайзинг до 15x15px</p></li>
+<li><p>Сохранение в CSV (1 строка = 1 изображение)</p></li>
+</ul>
+</section>
+</section>
+<section id="web-scraping-py">
+<h1><cite>web_scraping.py</cite><a class="headerlink" href="#web-scraping-py" title="Ссылка на этот заголовок"></a></h1>
+<section id="id5">
+<h2>Источники данных:<a class="headerlink" href="#id5" title="Ссылка на этот заголовок"></a></h2>
+<ul class="simple">
+<li><p>iNaturalist (капибары)</p></li>
+<li><p>Unsplash (фоновые изображения)</p></li>
+</ul>
+</section>
+<section id="id6">
+<h2>Функции:<a class="headerlink" href="#id6" title="Ссылка на этот заголовок"></a></h2>
+<ul class="simple">
+<li><p>Автопрокрутка страниц</p></li>
+<li><p>Фильтрация по разрешению (&gt;300px)</p></li>
+<li><p>Сохранение с уникальными именами</p></li>
+</ul>
+</section>
+</section>
+<section id="id7">
+<h1>2.  Обучение модели<a class="headerlink" href="#id7" title="Ссылка на этот заголовок"></a></h1>
+</section>
+<section id="train-model-py">
+<h1><cite>train_model.py</cite><a class="headerlink" href="#train-model-py" title="Ссылка на этот заголовок"></a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Параметры обучения</span>
+<span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span>
+ <span class="s1">&#39;gamma&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.0001</span><span class="p">],</span>
+ <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<section id="id8">
+<h2>Метрики:<a class="headerlink" href="#id8" title="Ссылка на этот заголовок"></a></h2>
+<ul class="simple">
+<li><p>Accuracy: <strong>92.5%</strong></p></li>
+</ul>
+</section>
+<section id="id9">
+<h2>Особенности:<a class="headerlink" href="#id9" title="Ссылка на этот заголовок"></a></h2>
+<ul class="simple">
+<li><p>Использует SVM с GridSearch</p></li>
+<li><p>Автоматическое разделение данных (80/20)</p></li>
+<li><p>Экспорт модели в <strong>TFLite</strong> для Android</p></li>
+</ul>
+</section>
+</section>
+<section id="android">
+<h1>3. Android-приложение<a class="headerlink" href="#android" title="Ссылка на этот заголовок"></a></h1>
+<section id="id10">
+<h2>Основные компоненты:<a class="headerlink" href="#id10" title="Ссылка на этот заголовок"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Компонент</p></th>
+<th class="head"><p>Назначение</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MainActivity</p></td>
+<td><p>UI + обработка разрешений</p></td>
+</tr>
+<tr class="row-odd"><td><p>Model</p></td>
+<td><p>Загрузка и выполнение модели</p></td>
+</tr>
+<tr class="row-even"><td><p>ImageUtils</p></td>
+<td><p>Конвертация Uri → Bitmap</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="workflow">
+<h2>Workflow:<a class="headerlink" href="#workflow" title="Ссылка на этот заголовок"></a></h2>
+<ol class="arabic simple">
+<li><p>Пользователь выбирает изображение</p></li>
+<li><p>Приложение преобразует его в тензор</p></li>
+<li><p>Модель возвращает предсказание (0/1)</p></li>
+</ol>
+</section>
+</section>
+<section id="id11">
+<h1>Подробное описание<a class="headerlink" href="#id11" title="Ссылка на этот заголовок"></a></h1>
+<section id="id12">
+<h2>Алгоритм работы модели<a class="headerlink" href="#id12" title="Ссылка на этот заголовок"></a></h2>
+<section id="id13">
+<h3>Предобработка изображения:<a class="headerlink" href="#id13" title="Ссылка на этот заголовок"></a></h3>
+<ul class="simple">
+<li><p>Ресайз до 15x15px</p></li>
+<li><p>Нормализация пикселей (0–1)</p></li>
+<li><p>Выравнивание в 1D вектор (675 features)</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="id14">
+<h1>Классификация:<a class="headerlink" href="#id14" title="Ссылка на этот заголовок"></a></h1>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="err">#</span><span class="w"> </span><span class="n">Псевдокод</span><span class="w"> </span><span class="n">предсказания</span>
+<span class="n">def</span><span class="w"> </span><span class="nf">predict</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+<span class="w"> </span><span class="n">processed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">preprocess</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+<span class="w"> </span><span class="n">prediction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">model</span><span class="p">.</span><span class="na">predict</span><span class="p">(</span><span class="n">processed</span><span class="p">)</span>
+<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;Капибара&quot;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">prediction</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s">&quot;Не капибара&quot;</span><span class="err">`</span>
+</pre></div>
+</div>
+</section>
+<section id="id15">
+<h1>Android-спецификации<a class="headerlink" href="#id15" title="Ссылка на этот заголовок"></a></h1>
+<section id="id16">
+<h2>Минимальные требования:<a class="headerlink" href="#id16" title="Ссылка на этот заголовок"></a></h2>
+<ul class="simple">
+<li><p>Android 5.0+ (API 21)</p></li>
+<li><p>Разрешение: <cite>READ_EXTERNAL_STORAGE</cite></p></li>
+<li><p>Поддержка <cite>TFLite</cite></p></li>
+</ul>
+</section>
+<section id="id17">
+<h2>Особенности реализации:<a class="headerlink" href="#id17" title="Ссылка на этот заголовок"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="n">Пример</span> <span class="n">вызова</span> <span class="n">модели</span>
+<span class="k">try</span> <span class="p">(</span><span class="n">Model</span> <span class="n">model</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Model</span><span class="p">(</span><span class="n">context</span><span class="p">))</span> <span class="p">{</span>
+ <span class="n">String</span> <span class="n">result</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predictFromUri</span><span class="p">(</span><span class="n">imageUri</span><span class="p">);</span>
+ <span class="n">showResult</span><span class="p">(</span><span class="n">result</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>}</p>
+</section>
+</section>
+<section id="id18">
+<h1>Установка и запуск<a class="headerlink" href="#id18" title="Ссылка на этот заголовок"></a></h1>
+<section id="id19">
+<h2>1. Клонировать проект<a class="headerlink" href="#id19" title="Ссылка на этот заголовок"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/zebrapol/Capy_detect.git</span>
+<span class="pre">`</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">mobile_capy</span>
+<span class="pre">`</span></code></p>
+<ul class="simple">
+<li><p>Открыть в Android Studio</p></li>
+<li><p>Выберите «Open an existing project» и укажите путь к проекту</p></li>
+<li><p>Убедитесь, что в build.gradle добавлены зависимости для TensorFlow Lite:</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">`</span> <span class="pre">implementation</span> <span class="pre">'org.tensorflow:tensorflow-lite:2.5.0'</span>
+<span class="pre">`</span></code></p>
+<ul class="simple">
+<li><p>Поместите файл модели model.tflite в папку assets/ (если отсутствует)</p></li>
+<li><p>Запустите приложение на устройстве или эмуляторе</p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Авторские права 2025, Andre. </p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
