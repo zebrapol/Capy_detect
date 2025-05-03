@@ -2,7 +2,7 @@ Metadata-Version: 2.4
 Name: capydetect
 Version: 1.0
 Summary: Капибара детектор
-Author: Podshivalov Andrew
+Author: Podshivalov Andrew Sokolov Aleksei
 Requires-Python: >=3.8
 Requires-Dist: attrs==25.3.0
 Requires-Dist: beautifulsoup4==4.13.3

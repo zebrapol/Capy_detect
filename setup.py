@@ -6,7 +6,7 @@ setup(
     packages=find_packages(),
     install_requires=open('requirements.txt').read().splitlines(),
     python_requires='>=3.8',
-    author="Podshivalov Andrew",
+    author="Podshivalov Andrew Sokolov Aleksei",
     description="Капибара детектор",
     command_options={
         'build_sphinx': {
